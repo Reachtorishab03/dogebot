@@ -5,7 +5,9 @@ const help={
   "fun":{
     "bowtalk":"get random topics to start up your conversations.",
     "bowsay":"afraid to say it yourself? make doge say it out!",
+    "bowcards":"Who doesn't love to play with cards! Try it, feel free to make up some cool game of cards using it",
     "bowmeme":"Who doesn't love memes! Try it out.",
+    "isthisforthat":"Need some quirky ideas for startup? Type it down fast then <:doge:824583822502133780>",
     "embed":"Put text that you specify inside an embed",
     "dog":"Shows random cute images of dog from dog.ceo",
   },
