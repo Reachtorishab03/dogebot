@@ -6,13 +6,15 @@
     "dev-run": "nodemon dist/index.js",
     "format": "npx eslint --fix . && prettier --no-config --write .",
     "start": "node dist/index.js",
-    "dev-watch": "tsc --watch"
+    "dev-watch": "tsc --watch",
+    "build": "tsc"
   },
   "dependencies": {
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "@types/node": "^14.14.35",
     "eslint": "^7.17.0",
     "nodemon": "^2.0.6",
     "prettier": "^2.2.1",
