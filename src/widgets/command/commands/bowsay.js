@@ -6,7 +6,7 @@ module.exports = new CommandBuilder()
   .setGuildOnly(false)
   .setRequireArgs(false)
   .setDeletable(false)
-  .setCooldown(10)
+  .setCooldown(0)
   .setDisabled(false)
   // eslint-disable-next-line
   .setExecute(async (message, user, args) => {
