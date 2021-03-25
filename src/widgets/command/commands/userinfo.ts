@@ -28,6 +28,9 @@ module.exports = new CommandBuilder()
           usrRoles.push("<@&"+r.id+">")
         }
       })
+      if(usrRoles.length==0){
+        usrRoles.push("None")
+      }
       console.log(usrRoles)
       let embed=new MessageEmbed()
         .setAuthor(`${message.author.tag}`,`${message.author.avatarURL()}`)
@@ -54,6 +57,10 @@ module.exports = new CommandBuilder()
           usrRoles.push("<@&"+r+">")
         }
       })
+
+      if(usrRoles.length==0){
+        usrRoles.push("None")
+      }
 
       let embed=new MessageEmbed()
         .setAuthor(`${usr.tag}`,`${usr.displayAvatarURL()}`)
