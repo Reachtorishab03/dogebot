@@ -1,4 +1,4 @@
-const CommandBuilder = require("../classes/CommandBuilder");
+import CommandBuilder from "../classes/CommandBuilder";
 
 module.exports = new CommandBuilder()
   .setAliases(["bowsay", "say","bow"])

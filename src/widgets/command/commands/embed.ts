@@ -1,4 +1,4 @@
-const CommandBuilder = require("../classes/CommandBuilder");
+import CommandBuilder from "../classes/CommandBuilder";
 const {MessageEmbed}=require("discord.js");
 
 module.exports = new CommandBuilder()

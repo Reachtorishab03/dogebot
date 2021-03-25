@@ -1,4 +1,4 @@
-const CommandBuilder = require("../classes/CommandBuilder");
+import CommandBuilder from "../classes/CommandBuilder";
 
 module.exports = new CommandBuilder()
   .setAliases(["p", "pong","ping"])
@@ -10,5 +10,5 @@ module.exports = new CommandBuilder()
   .setDisabled(false)
   // eslint-disable-next-line
   .setExecute(async (message, user, args) => {
-    await message.channel.send(`🏓 Bow! ${Math.round(message.client.ws.ping)} ms`);
+    await message.channel.send(`<:doge:824583822502133780> Bow! ${Math.round(message.client.ws.ping)} ms`);
   });

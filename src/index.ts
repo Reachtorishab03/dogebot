@@ -22,3 +22,5 @@ app.listen(port, () => {
 require("./core/loadWidgetListeners")(client);
 
 client.login(process.env.DISCORD_BOT_TOKEN);
+
+export default client;
