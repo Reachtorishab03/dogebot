@@ -15,7 +15,7 @@ module.exports = new CommandBuilder()
     if(args.length<=0){
       let embed=new MessageEmbed()
         .setTitle("Bow Cards!")
-        .setDescription(`Use the command \`.bowcards new\` for start a new deck!`)
+        .setDescription(`Use the command \`.bowcards new\` to start a new deck!`)
         .setColor("#d6a844")
       message.channel.send(embed);
     }
