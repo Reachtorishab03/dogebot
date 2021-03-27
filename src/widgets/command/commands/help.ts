@@ -12,7 +12,8 @@ const help={
     "dog":"Shows random cute images of dog from dog.ceo",
   },
   "music":{
-    "play":"Spice up lonely voice channels with music you like!"
+    "play":"Spice up lonely voice channels with music you like!",
+    "leave":"Stops the music, clears the queue, and disconnects."
   },
   "info":{
     "avatar":"Get a bigger image of a user's avatar, don't embarass them though.",

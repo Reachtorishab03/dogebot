@@ -1,6 +1,7 @@
 import CommandBuilder from "../classes/CommandBuilder";
 const {MessageEmbed}=require("discord.js");
 import axios from "axios";
+const urlencode=require("urlencode")
 
 module.exports = new CommandBuilder()
   .setAliases(["calc"])
@@ -13,11 +14,9 @@ module.exports = new CommandBuilder()
   // eslint-disable-next-line
   .setExecute(async (message, user, args) => {
     if(args.length>0){
-      var eq=args.join("")
-      for(let i=0;i<eq.length;i++){
-        eq=eq.replace(" ","")
-      }
-      let res= await axios.get("https://api.mathjs.org/v4/?expr="+eq);
+      var eq=args.join(" ")
+
+      let res= await axios.get("https://api.mathjs.org/v4/?expr="+urlencode(eq));
       let embed=new MessageEmbed()
         .setTitle("Result")
         .setDescription(res.data)
