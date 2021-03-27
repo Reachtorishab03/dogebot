@@ -4,7 +4,7 @@ import ytSearch from "yt-search";
 const {MessageEmbed}=require("discord.js");
 
 module.exports = new CommandBuilder()
-  .setAliases(["play"])
+  .setAliases(["play","bowplay","p"])
   .setOwnersOnly(false)
   .setGuildOnly(false)
   .setRequireArgs(false)

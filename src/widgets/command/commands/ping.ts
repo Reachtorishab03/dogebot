@@ -1,7 +1,7 @@
 import CommandBuilder from "../classes/CommandBuilder";
 
 module.exports = new CommandBuilder()
-  .setAliases(["p", "pong","ping"])
+  .setAliases(["pong","ping"])
   .setOwnersOnly(false)
   .setGuildOnly(false)
   .setRequireArgs(false)

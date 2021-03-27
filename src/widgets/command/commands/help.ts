@@ -11,6 +11,9 @@ const help={
     "embed":"Put text that you specify inside an embed",
     "dog":"Shows random cute images of dog from dog.ceo",
   },
+  "music":{
+    "play":"Spice up lonely voice channels with music you like!"
+  },
   "info":{
     "avatar":"Get a bigger image of a user's avatar, don't embarass them though.",
     "help":"Provides you with the command list",
@@ -51,6 +54,7 @@ module.exports = new CommandBuilder()
     if(args.length==0){
       const embed=new MessageEmbed();
       embed.addField(":tada: Fun",`\`${Object.keys(help.fun).join("`, `")}\``)
+      embed.addField(":musical_note: Music",`\`${Object.keys(help.music).join("`, `")}\``)
       embed.addField(":information_source: Info",`\`${Object.keys(help.info).join("`, `")}\``)
       embed.addField(":wrench: Utility",`\`${Object.keys(help.utility).join("`, `")}\``)
       embed.setColor("#d6a844")
