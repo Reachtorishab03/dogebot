@@ -22,7 +22,7 @@ module.exports = new CommandBuilder()
     }
     if(args.length>0){
       console.log(args[0],args[0].substring(3,(args[0].length)-1))
-      const usr=client.users.cache.get(args[0].substring(3,(args[0].length)-1))
+      const usr=client.users.cache.get(args[0].substring(2,(args[0].length)-1))
       console.log(usr);
       let embed=new MessageEmbed()
         .setAuthor(`${usr.username}`,`${usr.displayAvatarURL()}`)
